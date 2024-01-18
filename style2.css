@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("BD-en-20240108-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    height: 110vh;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(1.3);
+    overflow: hidden;
+}
+
+.main .box {
+    width: 100%;
+    height: 110vh;
+    opacity: 1;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.65) 25%, /* Adjusted to increase the middle portion */
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.65) 75%, /* Adjusted to increase the middle portion */
+        rgba(0, 0, 0, 0.9) 100%
+    );
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 95vw;
+    }
+}
+
+nav img {
+    width: 165px;
+    height: 45px;
+    margin: auto 0;
+    position: relative;
+    z-index: 1;
+    padding: 30px 0px 0px 0px;
+}
+
+.navbut {
+    margin: auto 0;
+    padding: 30px 0px 0px 0px;
+}
+
+nav .navbut button {
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    padding: 8px 15px;
+    transition: inherit;
+    border-style: solid;
+    border-radius: 0.4rem;
+    font: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    color: white;
+}
+
+.navbut button:nth-child(1) {
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid white;
+    color: white;
+    margin-right: 10px;
+}
+
+nav .navbut button:hover {
+    background-color: rgb(212, 27, 64);
+    cursor: pointer;
+}
+
+.mainnext {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px;
+}
+
+.mainnext h1,
+.mainnext h5,
+.mainnext p {
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainnext h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    .mainnext h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.mainnext h5 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .mainnext h5 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+.mainnext p {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .mainnext p {
+        font-size: 1rem;
+        font-weight: 200;
+        width: 80vw;
+    }
+
+    .mainnext h1,
+    .mainnext h5,
+    .mainnext p {
+        width: 80vw;
+    }
+}
+
+.mainnext span input {
+    width: 25vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background: transparent;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid white;
+}
+
+.mainnext span button {
+    width: 12vw;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.mainnext span button:hover {
+    background-color: rgb(226, 69, 69);
+    cursor: pointer;
+}
+
+.separationline {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(61, 60, 60);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .first {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+/* @media screen and (max-width: 837px) {
+    .firstbox {
+        width: 80vw;
+        max-width: 80vw;
+    }
+} */
+
+.firstbox h1 {
+    margin-left: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .firstbox h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: auto;
+        padding: 30px 0px;
+    }
+}
+
+.firstbox h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 823px) {
+    .firstbox h5 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: auto;
+        width: 80vw;
+        padding: 30px 0px;
+    }
+}
+
+.firstbox-img {
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .firstbox-img {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+.firstbox-img img {
+    position: relative;
+    z-index: 10;
+    right: 0;
+    overflow: hidden;
+}
+
+.video-container {
+    padding-top: 30px;
+    padding-left: 95px;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+    .video-container {
+        padding-top: 30px;
+        padding-left: 0px;
+        height: 0;
+        overflow: hidden;
+        width: 50%;
+        left: 0;
+    }
+}
+
+.firstbox-img video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+.imgbox-container {
+    display: flex;
+    border: 1.5px solid gray;
+    width: 350px;
+    height: 90px;
+    border-radius: 10px;
+    top: 350px;
+    left: 150px;
+    position: absolute;
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .imgbox-container {
+        flex-direction: column;
+        width: 100vw;
+        left: 5%;
+        top: 20%;
+    }
+}
+
+.secp {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-left: 6px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.secp p:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0px;
+    color: rgb(77, 48, 207);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secondbox-img {
+    position: relative;
+}
+
+.secondbox-img img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: auto;
+        padding: 30px 0px;
+    }
+}
+
+.text p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .second {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
