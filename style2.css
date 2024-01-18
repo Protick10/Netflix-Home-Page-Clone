@@ -370,6 +370,9 @@ nav .navbut button:hover {
 @media screen and (max-width: 1400px) {
     .second {
         flex-direction: column;
+        flex-wrap: wrap;
         width: 100vw;
     }
 }
+
+
